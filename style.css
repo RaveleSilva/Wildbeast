@@ -63,17 +63,27 @@ nav ul{
 
 aside{
   grid-area: aside;
-  padding: 40px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #FAFBFC;
+  align-items: center;
+  justify-content: center;
 }
 
 .side-link{
   padding: 20px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
+  max-width: 150px;
+  min-width: 100px;
 }
 
-.side-link + .side-link{
-  margin-top: 40px;
+.side-link:hover{
+  background-color: blueviolet;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 article{
